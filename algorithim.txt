@@ -3,30 +3,30 @@
 # Parameters: none
 # Return: Win or lose ending based on the user's final accusation
 
-Step 1: Display the opening story to the user.
+1: Display the opening story to the user.
     "Music and laughter echoes through the lodge of the Blackwater Tavern..."
 
-Step 2: Display the three suspects to the user:
+2: Display the three suspects to the user:
     - Ashe the Security Guard
     - Marshall the Wallflower
     - Kaido the Grunt
 
-Step 3: Prompt the user with an inner monologue.
+3: Prompt the user with an inner monologue.
     "Hmm, which one should I start with?"
     a. Validate input — must be Ashe, Marshall, or Kaido.
     b. If invalid, print an error and reprompt.
 
-Step 4: Display one clue about the chosen suspect.
+4: Display one clue about the chosen suspect.
     a. Track which suspects have already been investigated.
 
-Step 5: Prompt the user to choose their next action:
+5: Prompt the user to choose their next action:
     (a) Investigate another suspect
     (b) Inspect Blueno's crime scene for a new clue
     (c) Make a final accusation
     - Validate input — must be a, b, or c.
     - If invalid, print an error and reprompt.
 
-Step 6: Based on the user's choice:
+6: Based on the user's choice:
     If (a):
         - Show only suspects not yet investigated.
         - If all suspects have been investigated, inform the user
@@ -40,13 +40,13 @@ Step 6: Based on the user's choice:
     If (c):
         - Proceed to Step 7.
 
-Step 7: Prompt the user to make their final accusation.
+7: Prompt the user to make their final accusation.
     "Who do you think attacked Blueno?"
     - Must be Ashe, Marshall, or Kaido.
     - Validate input — if invalid, reprompt.
 
-Step 8: Evaluate the accusation.
+8: Evaluate the accusation.
     - If accusation == "Kaido": display the winning ending.
     - Else: display the losing ending.
 
-Step 9: End.
+9: End.
